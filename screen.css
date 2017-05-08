@@ -30,7 +30,7 @@ img {
 }
 
 #verdin-logo {
-  width: 200px;
+  width: 11.1111111em; /*200px | 200/18=11.111111em*/
   display: block;
   margin: 0 auto;
   padding-bottom: 1.222em; /*One gridline = 22px*/
@@ -114,7 +114,7 @@ li {
   }
 
   #verdin-logo {
-    width: 250px;
+    width: 13.888888889em; /*250px*/
   }
 
   #home-collage {
@@ -143,8 +143,11 @@ li {
 /* Based on a 12 column grid with 24px gutters*/
 @media screen and (min-width: 52.5em) {
   #page {
-    padding-left: 19.04762%;
-    padding-right: 19.04762%;
+    margin-left: 19.04762%;
+    margin-right: 19.04762%;
+    margin-top: 11px;
+    padding: 0.6111111em;
+    border: 0.055555556em solid #000000;
   }
 
   #navbar,
@@ -155,8 +158,8 @@ li {
 
   #navfoot {
     visibility: visible;
-    padding-top: 11px;
-    width: 61.90476%;
+    padding-top: 1.222222em;
+    width: calc(100% - 38.09524% - 1.22222em);
   }
 
   #navfoot li {
@@ -170,11 +173,11 @@ li {
 /* Based on a 12 column grid with 24px gutters*/
 @media screen and (min-width: 90em) {
   #page {
-    padding-left: 26.25%;
-    padding-right: 26.25%;
+    margin-left: 26.25%;
+    margin-right: 26.25%;
   }
 
   #navfoot {
-    width: 47.5%;
+    width: calc(100% - 52.5% - 1.22222em);
   }
 }
