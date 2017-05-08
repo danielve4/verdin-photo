@@ -36,9 +36,7 @@ img {
   padding-bottom: 1.222em; /*One gridline = 22px*/
 }
 
-#home-collage img {
-  max-width: none;
-  width: 100vw;
+#home-collage {
   margin-left: -0.91666667em; /*Makes image full bleed. 16.5px | 16.5/18=0.91666667em*/
   margin-right: -0.91666667em;
 }
@@ -89,12 +87,12 @@ img {
   position: static;
 }
 
-nav {
+#navbar {
   text-align: center;
   padding: 2.44444444em 0 1.222222em 0; /*44px top, 22px bottom (2 gridlines and 1 gridline)*/
 }
 
-nav a {
+#navbar a {
   display: block;
   padding: 0.61111111em 0; /*11px and 0*/
 }
@@ -103,30 +101,28 @@ li {
   padding-bottom: 0.611111111em; /*11px, half gridline*/
 }
 
+#navfoot {
+  visibility: hidden;
+  position: absolute;
+}
+
 /* 480px @ 16px/em*/
 @media screen and (min-width: 30em) {
   #page {
-    padding-left: 3.33333%;
-    padding-right: 3.33333%;
+    padding-left: 3.33333333%;
+    padding-right: 3.33333333%;
   }
 
   #verdin-logo {
     width: 250px;
   }
 
-  #home-collage,
-  #home-collage img {
-    left: 0;
-    width: 100vw;
+  #home-collage {
     margin: 0;
   }
 
-  #home-collage {
-    margin-left: -3.6%; /*TODO Fix*/
-  }
-
   #menu-button {
-    right: 3.33333%;
+    right: 3.333334%;
   }
 }
 
@@ -136,10 +132,6 @@ li {
   #page {
     padding-left: 2.66667%;
     padding-right: 2.66667%;
-  }
-
-  #home-collage {
-    margin-left: -2.8%;
   }
 
   #menu-button {
@@ -155,8 +147,21 @@ li {
     padding-right: 19.04762%;
   }
 
-  #home-collage {
-    margin-left: -30.76%;
+  #navbar,
+  #menu-button {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  #navfoot {
+    visibility: visible;
+    width: 61.90476%;
+  }
+
+  #navfoot li {
+    width: 25%;
+    float: left;
+    text-align: center;
   }
 }
 
@@ -168,7 +173,7 @@ li {
     padding-right: 26.25%;
   }
 
-  #home-collage {
-    margin-left: -55.25%;
+  #navfoot {
+    width: 47.5%;
   }
 }
