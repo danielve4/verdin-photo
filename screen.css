@@ -60,7 +60,7 @@ img {
 
 #social-media {
   text-align: center;
-  padding-top: 50px; /*TODO*/
+  padding-top: 2.77777778em;
 }
 
 #social-media figure {
@@ -145,8 +145,11 @@ li {
   #page {
     margin-left: 19.04762%;
     margin-right: 19.04762%;
-    margin-top: 11px;
+    margin-top: 0.6111111em;
     padding: 0.6111111em;
+  }
+
+  .with-line {
     border: 0.055555556em solid #000000;
   }
 
