@@ -95,3 +95,7 @@ nav a {
   display: block;
   padding: 0.61111111em 0; /*11px and 0*/
 }
+
+li {
+  padding-bottom: 0.611111111em; /*11px, half gridline*/
+}
