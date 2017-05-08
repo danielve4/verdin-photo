@@ -1,0 +1,37 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+html {
+  font-size: 1.125em;     /*18px / 16px = 1.125em*/
+  line-height: 1.222em;   /*22px is 1 gridline at 18px | 22px / 18px = 1.222em*/
+  background-color: #FFFFFF;
+  color: #222;
+  font-family: Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#page {
+  padding: 1.222em 0.91666667em; /*one gridline and 16.5px to achieve minor third: (4/3) (22/16.5px)*/
+}
+
+#verdin-logo {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1.222em;
+}
+
+#home-collage {
+  margin-left: -0.91666667em;
+  margin-right: -0.91666667em;
+}
+
