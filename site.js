@@ -22,7 +22,7 @@ jQuery(function($) {
   slideshow.slick({
     autoplay: true,
     arrows: false,
-    speed: 4000,
+    speed: 2000,
     autoplaySpeed: 4000
   });
 });
