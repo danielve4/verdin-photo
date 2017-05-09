@@ -121,7 +121,7 @@ li {
   overflow: hidden;
   box-sizing: border-box;
   -webkit-column-count: 2;
-  -webkit-column-gap:   0.125em;
+  -webkit-column-gap:   0.125em; /*2px | 2/16=0.125em*/
   -moz-column-count:    2;
   -moz-column-gap:      0.125em;
   column-count:         2;
@@ -131,7 +131,7 @@ li {
 #gallery img {
   width: 100%;
   height: auto;
-  margin-bottom: 0.111111em;
+  margin-bottom: 0.111111em; /*2px | 2/18=0.1111111em*/
 }
 
 #gallery li {
@@ -172,9 +172,16 @@ li {
   }
 
   #gallery {
-    -moz-column-count:    3;
     -webkit-column-count: 3;
+    -webkit-column-gap:   0.3125em; /*5px | 5/16=0.3125em*/
+    -moz-column-count:    3;
+    -moz-column-gap:      0.3125em;
     column-count:         3;
+    column-gap:           0.3125em;
+  }
+
+  #gallery img {
+    margin-bottom: 0.27777778em; /*5px | 5/18=0.027777778em*/
   }
 }
 
