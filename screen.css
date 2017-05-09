@@ -114,7 +114,28 @@ li {
   padding: 0.6111111em 0 0 1.22222em;
 }
 
+#gallery {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+#gallery li {
+  width: 49%;
+  padding-bottom: 2%;
+}
+
+#gallery li:nth-child(2n+1) {
+  float: left;
+}
+
+#gallery li:nth-child(2n) {
+  float: right;
+}
+
 /* 480px @ 16px/em*/
+/* Based on an 4 column grid with 16px gutters*/
 @media screen and (min-width: 30em) {
   #page {
     padding-left: 3.33333333%;
@@ -132,6 +153,11 @@ li {
   #menu-button {
     right: 3.333334%;
   }
+
+  #gallery li {
+    width: 48.214285571%; /*Two columns. 216px/(480[vw]-16[gutter]-16[gutter]=448px)=48.214285571%*/
+    padding-bottom: 3.571428572%; /* 100% - (48.214285571 * 2)%  = 3.571428572%*/
+  }
 }
 
 /* 600px @ 16px/em*/
@@ -144,6 +170,16 @@ li {
 
   #menu-button {
     right: 2.66667%;
+  }
+
+  #gallery li:nth-child(n) {
+    width: 22.8873239%; /*Two columns(130). 130px/(600[vw]-16[gutter]-16[gutter]=568px)=22.8873239%*/
+    padding-left: 2.816901408%; /*Gutter. 16/568=2.816901408%*/
+    float: left;
+  }
+
+  #gallery li:nth-child(3n+1) {
+    padding-left: 12.8521168%; /*One column left padding. (57+16[gutter])/568=12.8521168%*/
   }
 }
 
@@ -178,6 +214,20 @@ li {
     float: left;
     text-align: center;
   }
+
+  #gallery li {
+    width: 33.333333%;
+    float: left;
+  }
+
+  #gallery li:nth-child(n) {
+    width: 21.53846154%; /*Two columns(112). 112px/(840[vw]-24[gutter]-24[gutter]=520px)=21.53846154%*/
+    padding-left: 4.615384615%; /*Gutter. 24/520=4.615384615%*/
+  }
+
+  #gallery li:nth-child(4n+1) {
+    padding-left: 0;
+  }
 }
 
 /* 1440px @ 16px/em*/
@@ -190,5 +240,10 @@ li {
 
   #navfoot {
     width: calc(100% - 52.5% - 1.22222em);
+  }
+
+  #gallery li {
+    width: 25%;
+    float: left;
   }
 }
