@@ -17,11 +17,12 @@ jQuery(function($) {
       menuVisible = true;
     }
   }
-  
+
   var slideshow = $('#home-collage');
   slideshow.slick({
     autoplay: true,
     arrows: false,
+    speed: 4000,
     autoplaySpeed: 4000
   });
 });
