@@ -29,5 +29,5 @@ jQuery(function($) {
       slideImage.attr('src', paths[pathIndex]);
       pathIndex++;
     }).fadeIn(300);
-  }, 3000);
+  }, 4000);
 });
