@@ -18,4 +18,16 @@ jQuery(function($) {
     }
   }
 
+  var paths = ["./images/home-collage.jpg", "./images/home-collage-2.jpg"];
+  var pathIndex = 1;
+  var slideImage = $('.slide-image');
+  setInterval(function () {
+    if(pathIndex >= (paths.length)) {
+      pathIndex = 0;
+    }
+    slideImage.fadeOut(300, function () {
+      slideImage.attr('src', paths[pathIndex]);
+      pathIndex++;
+    }).fadeIn(300);
+  }, 3000);
 });
