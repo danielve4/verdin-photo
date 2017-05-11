@@ -1,8 +1,22 @@
 $.noConflict();
 jQuery(function($) {
   var menuVisible = false;
-  $('#menu-button').on('click', function (e) {
-    toggleMenu();
+  var slideshow = $('#home-collage');
+  $(document).ready(function() {
+    $('#menu-button').on('click', function (e) {
+      toggleMenu();
+    });
+
+    $('#code-form').on('submit', function (e) {
+      e.preventDefault();
+    });
+
+    slideshow.slick({
+      autoplay: true,
+      arrows: false,
+      speed: 2000,
+      autoplaySpeed: 4000
+    });
   });
 
   function toggleMenu() {
@@ -17,12 +31,4 @@ jQuery(function($) {
       menuVisible = true;
     }
   }
-
-  var slideshow = $('#home-collage');
-  slideshow.slick({
-    autoplay: true,
-    arrows: false,
-    speed: 2000,
-    autoplaySpeed: 4000
-  });
 });

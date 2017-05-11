@@ -168,6 +168,40 @@ li {
   border-top: solid 0.222222em black; /*4px |4/18=0.22222em*/
 }
 
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  border: 0;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+  -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+  box-sizing: border-box;
+}
+
+#code-text {
+  height: 4.54545454em; /*100px / 22px = 4.16666667em*/
+  margin-top: 0.5909090909em; /*13px*/
+  border: 0.33333333em solid #fafafa;
+  background: #fafafa;
+  resize: none;
+  color: #37003C;
+}
+
+#code-submit {
+  font-size: 1.8020454554em; /*39.645px / 22px = 1.8020454554em*/
+  height: 1.891789633em; /*75px / 39.645px = 1.891789633em*/
+  max-height: 1.891789633em; /*75px / 39.645px = 1.891789633em*/
+  margin-top: 0.3279102031em; /*13px / 39.654px = 0.3279102031em*/
+  background: #37003C;
+  color: #00FE87;
+  font-weight: 600;
+}
+
 /* 480px @ 16px/em*/
 /* Based on an 4 column grid with 16px gutters*/
 @media screen and (min-width: 30em) {
