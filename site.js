@@ -8,6 +8,7 @@ jQuery(function($) {
     });
 
     $('#code-form').on('submit', function (e) {
+      $('#images').empty();
       var code = ($('#code-text').val());//Gets text
       getFileNames(code, function (data) {
         $('#images').empty();
