@@ -45,7 +45,7 @@ jQuery(function($) {
   }
 
   function getFileNames(path, callback) {
-    var query = '/'+path+'/contents.json';
+    var query = '/'+path+'/contents.txt';
     console.log(query);
     $.when($.ajax({
       type: 'GET',
