@@ -202,6 +202,10 @@ textarea {
   font-weight: 600;
 }
 
+#controls {
+  padding: 1.2222em 0;
+}
+
 /* 480px @ 16px/em*/
 /* Based on an 4 column grid with 16px gutters*/
 @media screen and (min-width: 30em) {

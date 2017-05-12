@@ -9,7 +9,6 @@ jQuery(function($) {
 
     $('#code-form').on('submit', function (e) {
       var code = ($('#code-text').val());//Gets text
-      console.log("You typed in: " + code);
       getFileNames(code, function (data) {
         $('#images').empty();
         for(var i = 0; i < data.length; i++) {
@@ -46,16 +45,20 @@ jQuery(function($) {
 
   function getFileNames(path, callback) {
     var query = '/'+path+'/contents.txt';
-    console.log(query);
+    $('#code-error-message').empty();
     $.when($.ajax({
       type: 'GET',
       url: query
     })).then(function(data) {
       var jsonData = JSON.parse(data);
-      console.log(jsonData);
       callback(jsonData);
     }, function(e) {
       console.log(e);
+      onCodeError(path);
     });
+  }
+
+  function onCodeError(code) {
+    $('#code-error-message').append("EL CODIGO '"+code+"' NO ES VALIDO O EXPIRO.");
   }
 });
