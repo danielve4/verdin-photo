@@ -51,8 +51,9 @@ jQuery(function($) {
       type: 'GET',
       url: query
     })).then(function(data) {
-      console.log(data);
-      callback(data);
+      var jsonData = JSON.parse(data);
+      console.log(jsonData);
+      callback(jsonData);
     }, function(e) {
       console.log(e);
     });
